@@ -28,17 +28,23 @@ Description of run_analysis.R
 
 (A) PART A of the R code sets working directories and reads in 8 data files to create the following R data sets:
 	
-	1) s_test is a column vector of subject IDs (2,947 x 1) for the subjects assigned to the "test" group. Subject IDs take values between 1 and 30
+	1) s_test is a column vector of subject IDs (2,947 x 1) for the subjects assigned to the "test" group. 
+	Subject IDs take values between 1 and 30
 	
-	2) y_test is a column vector of activity codes (2,947 x 1) for the subjects assigned to the "test" group. Activity codes take values between 1 and 6
+	2) y_test is a column vector of activity codes (2,947 x 1) for the subjects assigned to the "test" group. 
+	Activity codes take values between 1 and 6
 	
-	3) x_test is a matrix of measured variables (2,947 x 561) for the subjects assigned to the "test" group. The variables retained for the project are summarized in the codebook.
+	3) x_test is a matrix of measured variables (2,947 x 561) for the subjects assigned to the "test" group. 
+	The variables retained for the project are summarized in the codebook.
 	
-	4) s_train is a column vector of subject IDs (7,352 x 1) for the subjects assigned to the "train" group. Subject IDs take values between 1 and 30
+	4) s_train is a column vector of subject IDs (7,352 x 1) for the subjects assigned to the "train" group. 
+	Subject IDs take values between 1 and 30
 	
-	5) y_train is a column vector of activity codes (7,352 x 1) for the subjects assigned to the "train" group. Activity codes take values between 1 and 6
+	5) y_train is a column vector of activity codes (7,352 x 1) for the subjects assigned to the "train" group. 
+	Activity codes take values between 1 and 6
 	
-	6) x_train is a matrix of measured variables (7,352 x 561) for the subjects assigned to the "train" group. The 	 variables retained for the project are summarized in the codebook.
+	6) x_train is a matrix of measured variables (7,352 x 561) for the subjects assigned to the "train" group. 
+	The variables retained for the project are summarized in the codebook.
 	
 	7) activity_labels is a mapping file (6 x 2) of activity codes and their associated descriptions (e.g. 1 = Walking)
 	

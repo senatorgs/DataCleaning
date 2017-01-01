@@ -46,7 +46,8 @@ Description of run_analysis.R
 	6) x_train is a matrix of measured variables (7,352 x 561) for the subjects assigned to the "train" group. 
 	The variables retained for the project are summarized in the codebook.
 	
-	7) activity_labels is a mapping file (6 x 2) of activity codes and their associated descriptions (e.g. 1 = Walking)
+	7) activity_labels is a mapping file (6 x 2) of activity codes and their associated descriptions 
+	(e.g. 1 = Walking)
 	
 	8) var_details is a mapping file (561 x 3) containing three columns:
 		a) Variable0 - Default variable name values in the x_test and x_train files (V1 - V561)

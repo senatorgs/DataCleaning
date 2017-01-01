@@ -68,7 +68,7 @@ merge2 = merge1[order(tidydata1$id),]
 
 #######################################################################################
 ### (G) STEP 5 - Create a second, independent tidy data set with the average
-###              of each variable fore each activity and subject
+###              of each variable for each activity and subject
 #######################################################################################
 
 tidydata <-aggregate(merge2$Value, by=list(merge2$Subject,merge2$Activity,merge2$Variable),FUN=mean, na.rm=TRUE)

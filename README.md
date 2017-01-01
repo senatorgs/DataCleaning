@@ -15,8 +15,11 @@ Project Contents
 The following four files, located in the GitHub repository, fullfill the Getting and Cleaning Data Course Project. 
 
 1) A readme file (README.md) summarizing the R code used to complete the project
+
 2) A code book (codebook.md) summarizing the relevant variables in the tidy data set
+
 3) A tidy data set in the form of a tab delimited text file (tidydata.txt)
+
 4) Source R code (run_analysis.R) used to create the tidy data set
 
 ==================================================================

@@ -1,7 +1,8 @@
 
 ==================================================================
 Gregg Stratton
-Coursera
+
+Coursera Course
 Johns Hopkins University
 Getting and Cleaning Data Course Project
 ==================================================================

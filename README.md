@@ -1,3 +1,4 @@
+
 ==================================================================
 Coursera 
 Johns Hopkins University
@@ -5,8 +6,7 @@ Getting and Cleaning Data Course Project
 ==================================================================
 
 The project prepares a summarized, tidy data set from data provided by the University of California at Irvine 
-(http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) measuring select activities of daily living of 30 subjects 
-using accelerometers from the Samsung Galaxy S smartphone.
+(http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) measuring select activities of daily living of 30 subjects using accelerometers from the Samsung Galaxy S smartphone.
 
 ==================================================================
 Project Contents
@@ -44,17 +44,19 @@ Description of run_analysis.R
 		b) Variable - Descriptive variable name values (e.g. tBodyAcc-mean()-X)
 		c) Type - Type of variable (e.g. mean, min, max, etc.)
 
-(B)  PART B: 1) creates the data set test using the cbind operator merging: 
+(B)  PART B: 
+
+	1) creates the data set test using the cbind operator merging: 
 		a) the s_test data set from PART A
 		b) the y_test data set from PART A
 		c) the x_test data set from PART A
 		
-	     2) creates the data set train using the cbind operator merging: 
+	2) creates the data set train using the cbind operator merging: 
 		a) the s_train data set from PART A
 		b) the y_train data set from PART A
 		c) the x_train data set from PART A
 		
-	     3) creates the data set fulldata by appending test and train data sets using the rbind operator
+	3) creates the data set fulldata by appending test and train data sets using the rbind operator
 
 ** PART B satisfies STEP 1 of the project to create a merged data set of the individual test and training data sets.
 

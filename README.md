@@ -4,9 +4,7 @@ Gregg Stratton
 
 Coursera Course
 
-Johns Hopkins University
-
-Getting and Cleaning Data Course Project
+Johns Hopkins University - Getting and Cleaning Data Course Project
 ==================================================================
 
 The project prepares a summarized, tidy data set from data provided by the University of California at Irvine 

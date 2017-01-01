@@ -5,7 +5,7 @@
 
 dir_test="C:/Users/Gregg/Documents/Stat/Data Cleaning/Project/test"
 dir_train="C:/Users/Gregg/Documents/Stat/Data Cleaning/Project/train"
-dir_main="C:/Users/Gregg/Documents/Stat/Data Cleaning/Project/out"
+dir_main="https://github.com/senatorgs/DataCleaning"
 setwd(dir_main)
 
 s_test <- read.table(paste(dir_test,"subject_test.txt",sep="/"),col.names=c("Subject"))

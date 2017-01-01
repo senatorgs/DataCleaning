@@ -56,32 +56,32 @@ Description of run_analysis.R
 
 (B)  PART B: 
 
-	1) creates the data set test using the cbind operator merging: 
-		a) the s_test data set from PART A
-		b) the y_test data set from PART A
-		c) the x_test data set from PART A
+	1) creates the data set 'test' using the cbind operator merging: 
+		a) the 's_test' data set from PART A
+		b) the 'y_test' data set from PART A
+		c) the 'x_test' data set from PART A
 		
-	2) creates the data set train using the cbind operator merging: 
-		a) the s_train data set from PART A
-		b) the y_train data set from PART A
-		c) the x_train data set from PART A
+	2) creates the data set 'train' using the cbind operator merging: 
+		a) the 's_train' data set from PART A
+		b) the 'y_train' data set from PART A
+		c) the 'x_train' data set from PART A
 		
-	3) creates the data set fulldata by appending test and train data sets using the rbind operator
+	3) creates the data set 'fulldata' by appending 'test' and 'train' data sets using the rbind operator
 
 ** PART B satisfies STEP 1 of the project to create a merged data set of the individual test and training data sets.
 
-(C) PART C is an intermediate step in the R code that iteratively transposes the fulldata data set creating row values for each of the 561 column variables.
+(C) PART C is an intermediate step in the R code that iteratively transposes the 'fulldata' data set creating row values for each of the 561 column variables.
 
-The resulting data set, transp1, is a longer, more narrow data set which will later facillitate an easy renaming of and selection from the 561 variables. 
+The resulting data set, 'transp1', is a longer, more narrow data set which will later facillitate an easy renaming of and selection from the 561 variables. 
     
-(D) PART D creates the data set transp4 by merging a fascimile of the data set created in PART C, transp2, with the variable mapping data set variable_details by Variable0. 
+(D) PART D creates the data set 'transp4' by merging a fascimile of the data set created in PART C, 'transp2', with the variable mapping data set 'variable_details' by Variable0 (default variable names). 
 
 As a result, the columns Variable (descriptive variable names) and Type (mean, min, max, etc.) are added as part of the merge. 
 A row ID variable was created in the process to ensure the original order was preserved post merge. 
 
 ** PART D satisfies STEP 4 of the project to label the data set with descriptive variable names.
 
-(E) PART E creates the data set tidydata1 (741,528 x 4) by filtering the data set transp4 from Part D for only those variables that represent a Type of mean or standard deviation as denoted by Type. 
+(E) PART E creates the data set 'tidydata1' by filtering the data set 'transp4' from Part D for only those variables that represent a Type of mean or standard deviation as denoted by Type. 
 
 All variables that have mean() and std() in the variable name in the features.txt file provided by UCI are denoted with a 
 Type of 'mean' and 'std' respectively in the mapping file and are filtered as such within the R code.
@@ -90,13 +90,13 @@ In the process of PART E, the columns Variable0, ID, and Type were dropped as th
 
 ** PART E satisfies STEP 2 of the project to extract only the measurements on the mean and standard deviation
 
-(F) PART F merges the data set created in PART E, tidydata1, with a mapping file of activity codes and activity names by ActivityCode to create the data setmerge2. 
+(F) PART F merges the data set created in PART E, 'tidydata1', with a mapping file of activity codes and activity names, 'activity_labels', by ActivityCode to create the data set 'merge2'. 
 
 A row ID variable was created in the process to ensure the original order was preserved post merge. 
 
 ** PART F satisfies STEP 3 of the project to use descriptive activity names to name activities
 
-(G) PART G creates the data set tidydata that calculates mean values for each subject, activity, and variable using the aggregate function while setting FUN=mean and finally creates a text file output of tidydata using the write.table function. 
+(G) PART G creates the data set 'tidydata' that calculates mean values for each subject, activity, and variable using the aggregate function and setting FUN=mean and finally creates a text file output of tidydata using the write.table function. 
 
 In the process of PART G, the columns ActivityCode and id were omitted as they are no longer needed. 
 
